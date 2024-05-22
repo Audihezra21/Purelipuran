@@ -553,3 +553,20 @@ video {
   --tw-contain-paint:  ;
   --tw-contain-style:  ;
 }
+
+.h-screen {
+  height: 100vh;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.max-w-48 {
+  max-width: 12rem;
+}
+
+.bg-\[\#224229\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(34 66 41 / var(--tw-bg-opacity));
+}

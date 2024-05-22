@@ -1,2 +1,2 @@
 import 'regenerator-runtime';
-import '../styles/output.css';
+import '../public/styles/style.css';
