@@ -7,9 +7,38 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>
-        Test, Rizki
-    </h1>
+    <header>
+        <nav>
+            <h1>ini navbar</h1>
+        </nav>
+    </header>
+
+    <main>
+        <div class="wrapper">
+            <h1>Rencana Kunjungan</h1>
+            <form action="">
+                <div class="form">
+                    <label for="tanggal">Tanggal Tiba</label>
+                    <input type="date" required>
+                </div>
+                <div class="form">
+                    <label for="paket">Pilih Paket</label>
+                    <select name="paket-option" id="">
+                        <option value="paket1">FullDay Tour</option>
+                        <option value="paket2">HalfDay Tour</option>
+                    </select>
+                    <select name="time-option" id="">
+                        <option value="time1">2Days 1Night Tour</option>
+                        <option value="time2">1Days Tour</option>
+                    </select>
+                </div>
+                <div class="form">
+                    <label for="">Jumlah Wisatawan</label>
+                    <input type="number" value="Jumlah Wisatawan">
+                </div>
+            </form>
+        </div>
+    </main>
     
     <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
 </body>
