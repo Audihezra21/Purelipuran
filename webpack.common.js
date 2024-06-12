@@ -8,6 +8,10 @@ module.exports = {
     home: './src/scripts/home.js',
     galery: './src/scripts/galery.js',
     pemesanan: './src/scripts/pemesanan.js',
+    pemesanan2: './src/scripts/pemesanan2.js',
+    pemesanan2b: './src/scripts/pemesanan2b.js',
+    pemesanan3: './src/scripts/pemesanan3.js',
+    pemesanan4: './src/scripts/pemesanan4.js',
     about: './src/scripts/about.js'
   },
   output: {
@@ -57,6 +61,26 @@ module.exports = {
       filename: 'pemesanan.html',
       template: './src/templates/pemesanan.html',
       chunks: ['pemesanan'],
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'pemesanan2.html',
+      template: './src/templates/pemesanan2.html',
+      chunks: ['pemesanan2'],
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'pemesanan2b.html',
+      template: './src/templates/pemesanan2b.html',
+      chunks: ['pemesanan2b'],
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'pemesanan3.html',
+      template: './src/templates/pemesanan3.html',
+      chunks: ['pemesanan3'],
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'pemesanan4.html',
+      template: './src/templates/pemesanan4.html',
+      chunks: ['pemesanan4'],
     }),
     new HtmlWebpackPlugin({
       filename: 'about.html',
