@@ -14,6 +14,7 @@ module.exports = {
     pemesanan3: './src/scripts/pemesanan3.js',
     pemesanan4: './src/scripts/pemesanan4.js',
     about: './src/scripts/about.js',
+    
   },
   output: {
     filename: '[name].bundle.js',
