@@ -1,15 +1,18 @@
 import { createClient } from '@supabase/supabase-js';
+
 class reviewHomeBar extends HTMLElement {
   constructor() {
     super();
-    this.render();
     this.supabaseUrl = 'https://zfebmchdyrqurbnxkpek.supabase.co';
     this.supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InpmZWJtY2hkeXJxdXJibnhrcGVrIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTgzNTczMjMsImV4cCI6MjAzMzkzMzMyM30.jRwjBiC2WMQM071msyNHDRgU0E3-EjWutlpo4uqefHs';
     this.supabase = createClient(this.supabaseUrl, this.supabaseKey);
   }
 
   async fetchReviews() {
-    const { data, error } = await this.supabase.from('ulasan').select('*').order('created_at', { ascending: false });
+    const { data, error } = await this.supabase
+      .from('ulasan')
+      .select('*')
+      .order('created_at', { ascending: false });
 
     if (error) {
       console.error('Error fetching reviews:', error.message);
@@ -19,8 +22,8 @@ class reviewHomeBar extends HTMLElement {
     return data;
   }
 
-  connectedCallback() {
-    this.render();
+  async connectedCallback() {
+    await this.render();
   }
 
   async render() {
@@ -60,6 +63,7 @@ class reviewHomeBar extends HTMLElement {
         </div>
       </div>
     `;
+
     // Tambahkan event listener untuk tombol Kirim Ulasan
     const submitButton = this.querySelector('#submitReview');
     submitButton.addEventListener('click', async () => {
@@ -89,6 +93,7 @@ class reviewHomeBar extends HTMLElement {
         alert('Mohon isi nama dan ulasan Anda.');
       }
     });
-    }
+  }
 }
+
 customElements.define('review-bar', reviewHomeBar);
