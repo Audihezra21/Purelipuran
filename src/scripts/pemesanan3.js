@@ -1,8 +1,16 @@
+// Import runtime untuk async/await (misalnya regenerator-runtime)
 import 'regenerator-runtime';
+
+// Import styles lokal (misalnya style.css)
 import '../../public/styles/style.css';
+
+// Import komponen-komponen yang diperlukan (misalnya index.js)
 import './components/index';
+
+// Import register service worker (misalnya sw-register.js)
 import swRegister from './utils/sw-register';
 
+// Daftarkan service worker setelah halaman dimuat
 window.addEventListener('load', () => {
   swRegister();
 });
@@ -29,22 +37,22 @@ document.getElementById('bookingForm').addEventListener('submit', function(event
   window.location.href = 'pemesanan4.html';
 });
 
-
+// Update opsi waktu berdasarkan pilihan paket
 document.getElementById('paket').addEventListener('change', function() {
   const paketSelect = document.getElementById('paket');
   const timeSelect = document.getElementById('time');
 
-  // Jika memilih "FullDay Tour", atur opsi "2Days 1Night Tour" untuk waktu
   if (paketSelect.value === 'FullDay Tour') {
     timeSelect.innerHTML = '<option value="2Days 1Night Tour">2Days 1Night Tour</option>';
   } else {
-    // Jika memilih "HalfDay Tour", atur opsi "1Day Tour" untuk waktu
     timeSelect.innerHTML = '<option value="1Day Tour">1Day Tour</option>';
   }
+
+  // Panggil updatePrice setelah mengubah opsi paket
+  updatePrice();
 });
 
-// pemesanan3.js
-
+// Fungsi untuk mengupdate harga berdasarkan paket dan jumlah wisatawan
 function updatePrice() {
   const paketSelect = document.getElementById('paket');
   const selectedOption = paketSelect.options[paketSelect.selectedIndex];
@@ -53,17 +61,17 @@ function updatePrice() {
   const jumlahInput = document.getElementById('jumlah');
   const jumlahWisatawan = parseInt(jumlahInput.value, 10);
 
-  if (isNaN(jumlahWisatawan) || jumlahWisatawan <= 0) {
-      // Handle case where jumlahWisatawan is NaN or <= 0
-      localStorage.setItem('totalHarga', 0); // Set totalHarga to 0
-      document.getElementById('totalPrice').innerText = `Rp. 0`;
+  if (isNaN(hargaPaket) || isNaN(jumlahWisatawan) || jumlahWisatawan <= 0) {
+    localStorage.setItem('totalHarga', 0);
+    document.getElementById('totalPrice').innerText = `Rp. 0`;
   } else {
-      const totalHarga = hargaPaket * jumlahWisatawan;
-      localStorage.setItem('totalHarga', totalHarga);
-      document.getElementById('totalPrice').innerText = `Rp. ${totalHarga.toLocaleString()}`;
+    const totalHarga = hargaPaket * jumlahWisatawan;
+    localStorage.setItem('totalHarga', totalHarga);
+    document.getElementById('totalPrice').innerText = `Rp. ${totalHarga.toLocaleString()}`;
   }
 }
 
+// Panggil updatePrice saat halaman dimuat
 document.addEventListener('DOMContentLoaded', function() {
   const paketSelect = document.getElementById('paket');
   const jumlahInput = document.getElementById('jumlah');
@@ -71,7 +79,6 @@ document.addEventListener('DOMContentLoaded', function() {
   paketSelect.addEventListener('change', updatePrice);
   jumlahInput.addEventListener('input', updatePrice);
 
-  // Call updatePrice once to initialize price display
+  // Panggil updatePrice sekali untuk inisialisasi tampilan harga
   updatePrice();
 });
-
