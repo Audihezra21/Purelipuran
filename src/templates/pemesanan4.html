@@ -29,19 +29,19 @@
     <main class="mt-32">
       <h1 class="text-center text-4xl mt-10 font-bold">Konfirmasi Pemesanan</h1>
       <div class="flex justify-around flex-wrap my-28 justify-items-center">
-        <div class="flex flex-col">
+        <div class="flex flex-col mx-28">
           <label for="fix-tanggal" class="text-lg font-medium">Tanggal Tiba</label>
-          <div class="mt-3 bg-gray-50 border border-gray-300 mb-5 py-3 px-24 rounded-lg">
+          <div id="fix-tanggal" class="mt-3 bg-gray-50 border border-gray-300 mb-5 py-3 px-5 rounded-lg w-70">
             Nanti ada isinya
           </div>
-
-          <label for="fix-tanggal" class="text-lg font-medium">Paket</label>
-          <div class="mt-3 bg-gray-50 border border-gray-300 mb-5 py-3 px-24 rounded-lg">
+    
+          <label for="fix-paket" class="text-lg font-medium">Paket</label>
+          <div id="fix-paket" class="mt-3 bg-gray-50 border border-gray-300 mb-5 py-3 px-5 rounded-lg w-70">
             Nanti ada isinya
           </div>
-
-          <label for="fix-tanggal" class="text-lg font-medium">Jumlah Wisatawan</label>
-          <div class="mt-3 bg-gray-50 border border-gray-300 py-3 px-24 rounded-lg">
+    
+          <label for="fix-jumlah" class="text-lg font-medium">Jumlah Wisatawan</label>
+          <div id="fix-jumlah" class="mt-3 bg-gray-50 border border-gray-300 py-3 px-5 rounded-lg w-70">
             Nanti ada isinya
           </div>
         </div>
@@ -84,13 +84,14 @@
 
             <div class="mb-5">
               <input
-                type="text"
-                id="harga"
-                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
-                placeholder="Harga"
-                required
+                  type="text"
+                  id="harga"
+                  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                  placeholder="Harga"
+                  value=""
+                  readonly
               />
-            </div>
+          </div>
 
             <div class="mb-5">
               <textarea
