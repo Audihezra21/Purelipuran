@@ -27,17 +27,17 @@
               <input id="tanggal" type="text" class="border-solid border-2 border-black p-3 rounded-xl max-w-80" required placeholder="Pilih Tanggal" onfocus="(this.type='date')" onblur="(this.type='text')">
             </div>
     
-            <div class="flex flex-col flex-wrap ">
-              <label for="paket" class="text-lg font-medium">Pilih Paket</label>
-              <select name="paket-option" id="paket" class="border-solid border-2 border-black p-3 rounded-xl max-w-80" required onchange="updatePrice()">
-                <option value="FullDay Tour / 2Days 1Night Tour " data-price="1000000">FullDay Tour</option>
-                <option value="HalfDay Tour / 1Day Tour " data-price="600000">HalfDay Tour</option>
-            </select>
-              <select id="time" name="time-option" class="border-solid border-2 border-black p-3 mt-3 mb-5 rounded-xl max-w-80" required>
-                <option value="2Days 1Night Tour">2Days 1Night Tour</option>
-                <option value="1Day Tour">1Day Tour</option>
-              </select>
-            </div>
+            <div class="flex flex-col flex-wrap">
+                <label for="paket" class="text-lg font-medium">Pilih Paket</label>
+                <select id="paket" name="paket-option" class="border-solid border-2 border-black p-3 rounded-xl max-w-80" required onchange="updatePrice()">
+                  <option value="FullDay Tour" data-price="1000000">FullDay Tour</option>
+                  <option value="HalfDay Tour" data-price="500000">HalfDay Tour</option>
+                </select>
+                <select id="time" name="time-option" class="border-solid border-2 border-black p-3 mt-3 mb-5 rounded-xl max-w-80" required>
+                  <option value="2Days 1Night Tour">2Days 1Night Tour</option>
+                  <option value="1Day Tour">1Day Tour</option>
+                </select>
+              </div>
     
             <div class="flex flex-col flex-wrap mb-5">
               <label for="jumlah" class="text-lg font-medium">Jumlah Wisatawan</label>
