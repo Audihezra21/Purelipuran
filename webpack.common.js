@@ -1,6 +1,7 @@
+const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
-const path = require('path');
+const WorkboxWebpackPlugin = require('workbox-webpack-plugin');
 
 module.exports = {
   entry: {
@@ -12,7 +13,8 @@ module.exports = {
     pemesanan2b: './src/scripts/pemesanan2b.js',
     pemesanan3: './src/scripts/pemesanan3.js',
     pemesanan4: './src/scripts/pemesanan4.js',
-    about: './src/scripts/about.js'
+    about: './src/scripts/about.js',
+    
   },
   output: {
     filename: '[name].bundle.js',
@@ -86,6 +88,9 @@ module.exports = {
       filename: 'about.html',
       template: './src/templates/about.html',
       chunks: ['about'],
+    }),
+    new WorkboxWebpackPlugin.GenerateSW({
+      swDest: './sw.bundle.js',
     }),
   ],
   resolve: {
