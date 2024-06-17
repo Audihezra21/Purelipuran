@@ -21,14 +21,14 @@
         </div>
     
         <div>
-          <form id="bookingForm" class="mx-28">
+          <form id="bookingForm" class="mx-10 md:mx-28 lg:mx-28">
             <div class="flex flex-col flex-wrap mb-5">
-              <label for="tanggal" class="text-lg font-medium">Tanggal Tiba</label>
+              <label for="tanggal" class="text-lg font-medium mb-3">Tanggal Tiba</label>
               <input id="tanggal" type="text" class="border-solid border-2 border-black p-3 rounded-xl max-w-80" required placeholder="Pilih Tanggal" onfocus="(this.type='date')" onblur="(this.type='text')">
             </div>
     
             <div class="flex flex-col flex-wrap">
-                <label for="paket" class="text-lg font-medium">Pilih Paket</label>
+                <label for="paket" class="text-lg font-medium mb-3">Pilih Paket</label>
                 <select id="paket" name="paket-option" class="border-solid border-2 border-black p-3 rounded-xl max-w-80" required onchange="updatePrice()">
                   <option value="FullDay Tour" data-price="1000000">FullDay Tour</option>
                   <option value="HalfDay Tour" data-price="500000">HalfDay Tour</option>
@@ -40,7 +40,7 @@
               </div>
     
             <div class="flex flex-col flex-wrap mb-5">
-              <label for="jumlah" class="text-lg font-medium">Jumlah Wisatawan</label>
+              <label for="jumlah" class="text-lg font-medium mb-3">Jumlah Wisatawan</label>
               <input id="jumlah" type="text" class="border-solid border-2 border-black p-3 rounded-xl max-w-80" placeholder="Masukan Jumlah Wisatawan" required onfocus="(this.type='number')" onblur="(this.type='text')">
             </div>
 
@@ -51,7 +51,7 @@
 
     
             <div class="flex justify-center md:justify-end lg:justify-end">
-              <button type="submit" class="border-solid border-2 bg-[#76885B] hover:bg-[#738c71] focus:ring-4 focus:ring-[#9ab898] rounded px-7 py-3 text-white">Next</button>
+              <button type="submit" class="border-solid border-2 bg-[#76885B] hover:bg-[#738c71] focus:ring-4 focus:ring-[#9ab898] rounded px-7 py-3 text-white mt-5">Next</button>
             </div>
           </form>
         </div>
