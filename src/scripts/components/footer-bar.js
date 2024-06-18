@@ -24,16 +24,16 @@ class footerBar extends HTMLElement {
                   <h2 class="mb-6 text-sm font-semibold text-white uppercase ">Informasi</h2>
                   <ul class="text-white  font-medium">
                       <li class="mb-4">
-                          <a href="/home.html" class="hover:underline">Beranda</a>
+                          <a href="/home" class="hover:underline">Beranda</a>
                       </li>
                       <li class="mb-4">
-                          <a href="/galery.html" class="hover:underline">Galeri</a>
+                          <a href="/galery" class="hover:underline">Galeri</a>
                       </li>
                       <li class="mb-4">
-                          <a href="/galery.html" class="hover:underline">Pemesanan</a>
+                          <a href="/galery" class="hover:underline">Pemesanan</a>
                       </li>
                       <li class="mb-4">
-                          <a href="/about.html" class="hover:underline">Tentang Kami</a>
+                          <a href="/about" class="hover:underline">Tentang Kami</a>
                       </li>
                   </ul>
               </div>

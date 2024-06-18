@@ -46,7 +46,7 @@ class galeriBar extends HTMLElement {
     </div>
 </div>
       <div class="flex justify-end mt-8">
-      <button type="button" class="focus:outline-none text-white bg-[#829E80] hover:bg-[#738c71] focus:ring-4 focus:ring-[#9ab898] font-medium rounded-sm text-md px-5 py-2.5 me-2 mb-2" onclick="location.href='galery.html'">Galeri <i class="fa-solid fa-arrow-right pl-2 text-sm"></i></button>
+      <button type="button" class="focus:outline-none text-white bg-[#829E80] hover:bg-[#738c71] focus:ring-4 focus:ring-[#9ab898] font-medium rounded-sm text-md px-5 py-2.5 me-2 mb-2" onclick="location.href='/galery'">Galeri <i class="fa-solid fa-arrow-right pl-2 text-sm"></i></button>
       </div>
     </div>
 
