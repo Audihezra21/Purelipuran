@@ -9,14 +9,24 @@ class aboutHomeBar extends HTMLElement {
    <div class="max-w-7xl mx-auto mt-14 px-4 md:px-8 lg:px-8 py-8 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">    
       <div class="grid gap-4">
           <div>
-            <img class="h-auto max-w-full rounded-lg" src="about1.jpg" alt="">
+          
+      <picture>
+        <source media="(max-width: 600px)" data-srcset="about1-small.jpg">
+            <img class="lazyload h-auto max-w-full rounded-lg" data-src="about1-large.jpg" alt="">
+            </picture>
           </div>
       <div class="grid grid-cols-1 gap-4 lg:grid-cols-2 md:grid-cols-2">
           <div>
-            <img class="h-auto max-w-full rounded-lg" src="about2.jpg" alt="">
+      <picture>
+        <source media="(max-width: 600px)" data-srcset="about2-small.jpg">
+            <img class="lazyload h-auto max-w-full rounded-lg" data-src="about2-large.jpg" alt="">
+            </picture>
           </div>
           <div>
-            <img class="h-auto max-w-full rounded-lg" src="about3.jpg" alt="">
+      <picture>
+        <source media="(max-width: 600px)" data-srcset="about3-small.jpg">
+            <img class="lazyload h-auto max-w-full rounded-lg" data-src="about3-large.jpg" alt="">
+            </picture>
           </div>
       </div>
     </div>
