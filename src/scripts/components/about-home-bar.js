@@ -43,7 +43,7 @@ class aboutHomeBar extends HTMLElement {
           Rai. Secara georafis terletak pada ketinggian 600- 650 m dari
           permukaan air laut, sehingga memiliki suhu yang cukup sejuk. 
         </p>
-       <button type="button" class="focus:outline-none text-white   bg-[#829E80] hover:bg-[#738c71] focus:ring-4 focus:ring-[#9ab898] font-medium rounded-sm text-md px-5 py-2.5 me-2 mb-2 " onclick="location.href='about.html'">Baca Selengkapnya</button>
+       <button type="button" class="focus:outline-none text-white   bg-[#829E80] hover:bg-[#738c71] focus:ring-4 focus:ring-[#9ab898] font-medium rounded-sm text-md px-5 py-2.5 me-2 mb-2 " onclick="location.href='/about'">Baca Selengkapnya</button>
 
       </div>
     </div>

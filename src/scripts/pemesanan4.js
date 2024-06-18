@@ -24,11 +24,16 @@ function sendMessage(event) {
   // Ambil data booking dari localStorage
   const bookingData = JSON.parse(localStorage.getItem('bookingData'));
 
+  const confirmed = window.confirm(`Apakah Anda yakin ingin mengirim pesan ini ke WhatsApp?`);
   // Buat teks pesan WhatsApp dengan data booking dan data lainnya
+  if (confirmed) {
   const url = `https://api.whatsapp.com/send?phone=6281375100138&text=Halo%2C%20Permisi%0ASaya%20*${name}*%20%0ANomor%20yang%20dapat%20dihubungi%20*${nophone}*%0Aemail%20saya%20*${email}*%0A%0ATanggal%20Tiba%3A%20*${bookingData.tanggal}*%0APaket%3A%20*${bookingData.paket}%20${bookingData.time}*%0AJumlah%20Wisatawan%3A%20*${bookingData.jumlah}*%0A%0ATotal%20biaya%20%3A%20*${harga}*%0APesan%20Tambahan%3A%20*${pesan}*%0A%0A`;
 
   // Buka WhatsApp dalam tab baru
   window.open(url, '_blank');
+  window.location.href = '/home';
+  window.alert('Terima Kasih Telah Melakukan pemesanan!');
+  }
 }
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -46,5 +51,5 @@ document.addEventListener('DOMContentLoaded', function() {
 
 const totalHarga = localStorage.getItem('totalHarga');
 
-// Set the value of harga input in pemesanan4.html
 document.getElementById('harga').value = `Rp. ${totalHarga.toLocaleString()}`;
+

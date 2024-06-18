@@ -20,16 +20,16 @@ class navBar extends HTMLElement {
           <div class="hidden w-full md:block md:w-auto" id="navbar-default">
             <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-[#76885B] md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-[#76885B]">
               <li>
-                <a href="home.html" class="block py-2 px-3 text-white font-bold md:p-0 hover:underline">Beranda</a>
+                <a href="/home" class="block py-2 px-3 text-white font-bold md:p-0 hover:underline">Beranda</a>
               </li>
               <li>
-                <a href="galery.html" class="block py-2 px-3 text-white font-bold md:p-0 hover:underline">Galeri</a>
+                <a href="/galery" class="block py-2 px-3 text-white font-bold md:p-0 hover:underline">Galeri</a>
               </li>
               <li>
-                <a href="pemesanan.html" class="block py-2 px-3 text-white font-bold md:p-0 hover:underline">Pemesanan</a>
+                <a href="/pemesanan" class="block py-2 px-3 text-white font-bold md:p-0 hover:underline">Pemesanan</a>
               </li>
               <li>
-                <a href="about.html" class="block py-2 px-3 text-white font-bold md:p-0 hover:underline">Tentang Kami</a>
+                <a href="/about" class="block py-2 px-3 text-white font-bold md:p-0 hover:underline">Tentang Kami</a>
               </li>
             </ul>
           </div>

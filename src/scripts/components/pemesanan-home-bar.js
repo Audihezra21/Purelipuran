@@ -21,7 +21,7 @@ class pemesananHomeBar extends HTMLElement {
         </p>
         <button
           type="button"
-          class="focus:outline-none text-white bg-[#829E80] hover:bg-[#738c71] focus:ring-4 focus:ring-[#9ab898] font-medium rounded-sm text-md px-5 py-2.5 me-2 mb-2 " onclick="location.href='pemesanan.html'"
+          class="focus:outline-none text-white bg-[#829E80] hover:bg-[#738c71] focus:ring-4 focus:ring-[#9ab898] font-medium rounded-sm text-md px-5 py-2.5 me-2 mb-2 " onclick="location.href='/pemesanan'"
         >
           Baca Selengkapnya
         </button>

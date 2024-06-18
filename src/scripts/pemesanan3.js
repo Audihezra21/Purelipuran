@@ -34,7 +34,7 @@ document.getElementById('bookingForm').addEventListener('submit', function(event
   localStorage.setItem('bookingData', JSON.stringify(bookingData));
 
   // Redirect to pemesanan4.html
-  window.location.href = 'pemesanan4.html';
+  window.location.href = '/pemesanan4';
 });
 
 // Update opsi waktu berdasarkan pilihan paket

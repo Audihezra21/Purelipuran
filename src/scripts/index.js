@@ -5,3 +5,4 @@ import swRegister from './utils/sw-register';
 window.addEventListener('load', () => {
   swRegister();
 });
+
