@@ -1,0 +1,17 @@
+{
+    "rewrites": [
+      { "source": "/home", "destination": "/home.html" },
+      { "source": "/galery", "destination": "/galery.html" },
+      { "source": "/pemesanan", "destination": "/pemesanan.html" },
+      { "source": "/pemesanan2", "destination": "/pemesanan2.html" },
+      { "source": "/pemesanan2b", "destination": "/pemesanan2b.html" },
+      { "source": "/pemesanan3", "destination": "/pemesanan3.html" },
+      { "source": "/pemesanan4", "destination": "/pemesanan4.html" },
+      { "source": "/about", "destination": "/about.html" },
+      { "source": "/(.*)", "destination": "/$1.html" }
+    ],
+    "headers": [
+      { "source": "/(.*)", "headers": [{ "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }] }
+    ]
+  }
+  
