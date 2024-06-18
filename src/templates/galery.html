@@ -21,111 +21,149 @@
       <link rel="icon" href="./favicon.png" />
     <title>Purelipuran</title>
   </head>
-    <body>
-        <nav-bar></nav-bar>
-        <hero-bar></hero-bar>
-          
-          <div class="flex items-center justify-center py-4 md:py-8 flex-wrap">
-            <button type="button" class="text-[#76885B] hover:text-white border border-black bg-white hover:bg-[#76885B] focus:ring-4 focus:outline-none focus:ring-[#76885B] rounded-full text-base font-medium px-5 py-2.5 text-center me-3 mb-3">Semua</button>
-            <button type="button" class="text-[#76885B] hover:text-white border border-black bg-white hover:bg-[#76885B] focus:ring-4 focus:outline-none focus:ring-[#76885B] rounded-full text-base font-medium px-5 py-2.5 text-center me-3 mb-3">Outing</button>
-            <button type="button" class="text-[#76885B] hover:text-white border border-black bg-white hover:bg-[#76885B] focus:ring-4 focus:outline-none focus:ring-[#76885B] rounded-full text-base font-medium px-5 py-2.5 text-center me-3 mb-3">Outbound</button>
-            <button type="button" class="text-[#76885B] hover:text-white border border-black bg-white hover:bg-[#76885B] focus:ring-4 focus:outline-none focus:ring-[#76885B] rounded-full text-base font-medium px-5 py-2.5 text-center me-3 mb-3">Gathering</button>
-            <button type="button" class="text-[#76885B] hover:text-white border border-black bg-white hover:bg-[#76885B] focus:ring-4 focus:outline-none focus:ring-[#76885B] rounded-full text-base font-medium px-5 py-2.5 text-center me-3 mb-3">Cycling</button>
-            <button type="button" class="text-[#76885B] hover:text-white border border-black bg-white hover:bg-[#76885B] focus:ring-4 focus:outline-none focus:ring-[#76885B] rounded-full text-base font-medium px-5 py-2.5 text-center me-3 mb-3">Camping</button>
-          </div>
-          
-          
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mx-10 px-4 lg:grid-cols-3">
-            <div class="grid gap-6">
-                <div>
-                  <picture>
-                  <source
-                    media="(max-width: 600px)"
-                    data-srcset="galeri1-small.jpg"
-                  />
-                    <img class="lazyload h-auto max-w-full rounded-lg" data-src="galeri1-large.jpg" alt="">
-                  </picture>
-                </div>
-                <div>
-                    <picture>
-                  <source
-                    media="(max-width: 600px)"
-                    data-srcset="galeri3-small.jpg"
-                  />
-                    <img class="lazyload h-auto max-w-full rounded-lg" data-src="galeri3-large.jpg" alt="">
-                    </picture>
-                </div>
-                <div>
-                    <picture>
-                  <source
-                    media="(max-width: 600px)"
-                    data-srcset="galeri3-small.jpg"
-                  />
-                    <img class="lazyload h-auto max-w-full rounded-lg" data-src="galeri3-large.jpg" alt="">
-                    </picture>
-                </div>
-            </div>
-            <div class="grid gap-4 items-center">
-                <div>
-                    <picture>
-                  <source
-                    media="(max-width: 600px)"
-                    data-srcset="galeri4-small.jpg"
-                  />
-                    <img class="lazyload h-auto max-w-full rounded-lg" data-src="galeri4-large.jpg" alt="">
-                    </picture>
-                </div>
-                <div> 
-                  <picture>
-                  <source
-                    media="(max-width: 600px)"
-                    data-srcset="galeri3-small.jpg"
-                  />
-                    <img class="lazyload h-auto max-w-full rounded-lg" data-src="galeri3-large.jpg" alt="">
-                    </picture>
-                </div>
-                <div>
-                   <picture>
-                  <source
-                    media="(max-width: 600px)"
-                    data-srcset="galeri1-small.jpg"
-                  />
-                    <img class="lazyload h-auto max-w-full rounded-lg" data-src="galeri1-large.jpg" alt="">
-                    </picture>
-                </div>
-            </div>
-            <div class="grid gap-4 items-start">
+  <body>
+    <nav-bar></nav-bar>
+    <hero-bar></hero-bar>
+    <main>
+    <div class="flex items-center justify-center py-4 md:py-8 flex-wrap">
+        <button data-category="all" class="filter-button text-[#76885B] hover:text-white border border-black bg-white hover:bg-[#76885B] focus:ring-4 focus:outline-none focus:ring-[#76885B] rounded-full text-base font-medium px-5 py-2.5 text-center me-3 mb-3">Semua</button>
+        <button data-category="grupevent" class="filter-button text-[#76885B] hover:text-white border border-black bg-white hover:bg-[#76885B] focus:ring-4 focus:outline-none focus:ring-[#76885B] rounded-full text-base font-medium px-5 py-2.5 text-center me-3 mb-3">Group Event</button>
+        <button data-category="cycling" class="filter-button text-[#76885B] hover:text-white border border-black bg-white hover:bg-[#76885B] focus:ring-4 focus:outline-none focus:ring-[#76885B] rounded-full text-base font-medium px-5 py-2.5 text-center me-3 mb-3">Cycling</button>
+        <button data-category="camping" class="filter-button text-[#76885B] hover:text-white border border-black bg-white hover:bg-[#76885B] focus:ring-4 focus:outline-none focus:ring-[#76885B] rounded-full text-base font-medium px-5 py-2.5 text-center me-3 mb-3">Camping</button>
+    </div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 items-center justify-items-center grid leading-relaxed gallery-section" id="category-all" data-category="all">
+      <h1 class="text-center text-3xl mb-4 font-bold lg:text-4xl md:text-4xl">Semua</h1>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+        <div>
+            <picture>
+          <source
+            media="(max-width: 600px)"
+            data-srcset="galeri1-small.jpg"
+          />
+            <img class="lazyload h-auto max-w-full rounded-lg" data-src="galeri1-large.jpg" alt="">
+            </picture>
+        </div>
+        <div>
+            <picture>
+          <source
+            media="(max-width: 600px)"
+            data-srcset="galeri2-small.jpg"
+          />
+            <img class="lazyload h-auto max-w-full rounded-lg" data-src="galeri2-large.jpg" alt="">
+            </picture>
+        </div>
+        <div>
+            <picture>
+          <source
+            media="(max-width: 600px)"
+            data-srcset="galeri3-small.jpg"
+          />
+            <img class="lazyload h-auto max-w-full rounded-lg" data-src="galeri3-large.jpg" alt="">
+            </picture>
+        </div>
+      </div>
+    </div>
 
-                <div>
-                   <picture>
-                  <source
-                    media="(max-width: 600px)"
-                    data-srcset="galeri3-small.jpg"
-                  />
-                    <img class="lazyload h-auto max-w-full rounded-lg" data-src="galeri3-large.jpg" alt="">
-                    </picture>
-                </div>
-                <div>
-                   <picture>
-                  <source
-                    media="(max-width: 600px)"
-                    data-srcset="galeri4-small.jpg"
-                  />
-                    <img class="lazyload h-auto max-w-full rounded-lg" data-src="galeri4-large.jpg" alt="">
-                    </picture>
-                </div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 items-center justify-items-center grid leading-relaxed gallery-section" id="category-grupevent" data-category="grupevent">
+      <h1 class="text-center text-3xl mb-4 font-bold lg:text-4xl md:text-4xl" style="display: none;">Group Event</h1>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+        <div>
+            <picture>
+                <source
+                  media="(max-width: 600px)"
+                  data-srcset="penglipuran3-small.jpg"
+                />
+          <img class="lazyload h-auto max-w-full rounded-lg" data-src="penglipuran3-large.jpg" alt="">
+            </picture>
+        </div>
+        <div>
+            <picture>
+                <source
+                  media="(max-width: 600px)"
+                  data-srcset="grupevent1-small.jpg"
+                />
+          <img class="lazyload h-auto max-w-full rounded-lg" data-src="grupevent1-large.jpg" alt="">
+            </picture>
+        </div>
+        <div>
+            <picture>
+                <source
+                  media="(max-width: 600px)"
+                  data-srcset="galeri4-small.jpg"
+                />
+          <img class="lazyload h-auto max-w-full rounded-lg" data-src="galeri4-large.jpg" alt="">
+            </picture>
+        </div>
+      </div>
+    </div>
 
-                <div>
-                   <picture>
-                  <source
-                    media="(max-width: 600px)"
-                    data-srcset="galeri5-small.jpg"
-                  />
-                    <img class="lazyload h-auto max-w-full rounded-lg" data-src="galeri5-large.jpg" alt="">
-                    </picture>
-                </div>
-            </div>
-          </div>
-          <footer-bar></footer-bar>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 items-center justify-items-center grid leading-relaxed gallery-section" id="category-cycling" data-category="cycling">
+      <h1 class="text-center text-3xl mb-4 font-bold lg:text-4xl md:text-4xl" style="display: none;" >Cycling</h1>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+        <div>
+            <picture>
+                <source
+                  media="(max-width: 600px)"
+                  data-srcset="cycling1-small.jpg"
+                />
+          <img class="lazyload h-auto max-w-full rounded-lg" data-src="cycling1-large.jpg" alt="">
+            </picture>
+        </div>
+        <div>
+            <picture>
+                <source
+                  media="(max-width: 600px)"
+                  data-srcset="cycling2-small.jpg"
+                />
+          <img class="lazyload h-auto max-w-full rounded-lg" data-src="cycling2-large.jpg" alt="">
+            </picture>
+        </div>
+        <div>
+            <picture>
+                <source
+                  media="(max-width: 600px)"
+                  data-srcset="cycling3-small.jpg"
+                />
+          <img class="lazyload h-auto max-w-full rounded-lg" data-src="cycling3-large.jpg" alt="">
+            </picture>
+        </div>
+      </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 items-center justify-items-center grid leading-relaxed gallery-section" id="category-camping" data-category="camping">
+      <h1 class="text-center text-3xl mb-4 font-bold lg:text-4xl md:text-4xl" style="display: none;">Camping</h1>
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+        <div>
+            <picture>
+                <source
+                  media="(max-width: 600px)"
+                  data-srcset="Camping2-small.jpg"
+                />
+          <img class="lazyload h-auto max-w-full rounded-lg" data-src="Camping2-large.jpg" alt="">
+            </picture>
+        </div>
+        <div>
+            <picture>
+                <source
+                  media="(max-width: 600px)"
+                  data-srcset="Camping1-small.jpg"
+                />
+          <img class="lazyload h-auto max-w-full rounded-lg" data-src="Camping1-large.jpg" alt="">
+            </picture>
+        </div>
+        <div>
+            <picture>
+                <source
+                  media="(max-width: 600px)"
+                  data-srcset="Camping3-small.jpg"
+                />
+          <img class="lazyload h-auto max-w-full rounded-lg" data-src="Camping3-large.jpg" alt="">
+            </picture>
+        </div>
+      </div>
+    </div>
+
+  </main>
+    <footer-bar></footer-bar>
     </body>
   </html>

@@ -2,7 +2,7 @@ const sharp = require('sharp');
 const fs = require('fs');
 const path = require('path');
 
-const target = path.resolve(__dirname, 'src/assets/hero');
+const target = path.resolve(__dirname, 'src/assets');
 const destination = path.resolve(__dirname, 'src/assets');
 
 if (!fs.existsSync(destination)) {
