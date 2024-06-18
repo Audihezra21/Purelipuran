@@ -1,31 +1,33 @@
 import './components/index';
 import '../../public/styles/style.css';
 import swRegister from './utils/sw-register';
+import 'lazysizes';
+import 'lazysizes/plugins/parent-fit/ls.parent-fit';
 
 window.addEventListener('load', () => {
   swRegister();
 });
 
 // Get the button
-const mybutton = document.getElementById("btn-back-to-top");
+const mybutton = document.getElementById('btn-back-to-top');
 
 // When the user scrolls down 20px from the top of the document, show the button
 
 const scrollFunction = () => {
   if (
-    document.body.scrollTop > 20 ||
-    document.documentElement.scrollTop > 20
+    document.body.scrollTop > 20
+    || document.documentElement.scrollTop > 20
   ) {
-    mybutton.classList.remove("hidden");
+    mybutton.classList.remove('hidden');
   } else {
-    mybutton.classList.add("hidden");
+    mybutton.classList.add('hidden');
   }
 };
 const backToTop = () => {
-  window.scrollTo({ top: 0, behavior: "smooth" });
+  window.scrollTo({ top: 0, behavior: 'smooth' });
 };
 
 // When the user clicks on the button, scroll to the top of the document
-mybutton.addEventListener("click", backToTop);
+mybutton.addEventListener('click', backToTop);
 
-window.addEventListener("scroll", scrollFunction);
+window.addEventListener('scroll', scrollFunction);

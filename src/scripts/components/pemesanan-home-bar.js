@@ -9,7 +9,10 @@ class pemesananHomeBar extends HTMLElement {
   
    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 grid grid-cols-1 md:grid-cols-2 gap-8 items-center lg:mt-8 md:mt-8">
       <div class="grid gap-4">
-        <img class="h-auto max-w-full rounded-lg" src="pemesanan.jpg" alt="" />
+            <picture>
+        <source media="(max-width: 600px)" data-srcset="pemesanan-small.jpg">
+        <img class="lazyload h-auto max-w-full rounded-lg" data-src="pemesanan-large.jpg" alt="" />
+        </picture>
       </div>
       <div>
         <h2 class="text-4xl font-bold mb-4 lg:text-5xl md:text-5xl">Pemesanan</h2>

@@ -12,21 +12,36 @@ class galeriBar extends HTMLElement {
     <div class="grid gap-4 ">
     <div class="grid grid-cols-2 gap-4 sm:grid-cols-2">
     <div>
-        <img class="h-auto max-w-full rounded-lg" src="galeri1.jpg" alt="">
+      <picture>
+        <source media="(max-width: 600px)" data-srcset="galeri1-small.jpg">
+        <img class="lazyload h-auto max-w-full rounded-lg" data-src="galeri1-large.jpg" alt="">
+        </picture>
     </div>
     <div>
-        <img class="h-auto max-w-full rounded-lg" src="galeri2.jpg" alt="">
+          <picture>
+        <source media="(max-width: 600px)" data-srcset="galeri2-small.jpg">
+        <img class="lazyload h-auto max-w-full rounded-lg" data-src="galeri2-large.jpg" alt="">
+        </picture>
     </div>
     </div>
     <div class="grid grid-cols-2 lg:grid-cols-3 md:grid-cols-3 gap-4">
         <div>
-            <img class="h-auto max-w-full rounded-lg" src="galeri3.jpg" alt="">
+              <picture>
+        <source media="(max-width: 600px)" data-srcset="galeri3-small.jpg">
+            <img class="lazyload h-auto max-w-full rounded-lg" data-src="galeri3-large.jpg" alt="">
+            </picture>
         </div>
-        <div>
-            <img class="h-auto max-w-full rounded-lg" src="galeri4.jpg" alt="">
+        <div>     
+         <picture>
+        <source media="(max-width: 600px)" data-srcset="galeri4-small.jpg">
+            <img class="lazyload h-auto max-w-full rounded-lg" data-src="galeri4-large.jpg" alt="">
+            </picture>
         </div>
         <div class="grid-cols-1 ">
-            <img class="h-auto max-w-full rounded-lg" src="galeri5.jpg" alt="">
+      <picture>
+        <source media="(max-width: 600px)" data-srcset="galeri5-small.jpg">
+            <img class="lazyload h-auto max-w-full rounded-lg" data-src="galeri5-large.jpg" alt="">
+            </picture>
         </div>
     </div>
 </div>
