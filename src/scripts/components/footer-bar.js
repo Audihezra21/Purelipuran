@@ -30,7 +30,7 @@ class footerBar extends HTMLElement {
                           <a href="/galery" class="hover:underline">Galeri</a>
                       </li>
                       <li class="mb-4">
-                          <a href="/galery" class="hover:underline">Pemesanan</a>
+                          <a href="/pemesanan" class="hover:underline">Pemesanan</a>
                       </li>
                       <li class="mb-4">
                           <a href="/about" class="hover:underline">Tentang Kami</a>
@@ -71,27 +71,27 @@ class footerBar extends HTMLElement {
           <span class="text-sm text-white lg:text-center ">© 2024 <a href="/" class="hover:underline">Purelipuran™</a>. All Rights Reserved.
           </span>
           <div class="flex mt-4 lg:justify-center lg:mt-0">
-              <a href="#" class="text-white hover:text-gray-900 ">
+              <a href="https://www.facebook.com/desapenglipuranbali" class="text-white hover:text-gray-900 ">
                   <i class="fa-brands fa-facebook"></i>
                   <span class="sr-only">Facebook page</span>
               </a>
-              <a href="#" class="text-white hover:text-gray-900  ms-5">
+              <a href="https://www.instagram.com/desapenglipuranbali/" class="text-white hover:text-gray-900  ms-5">
                   <i class="fa-brands fa-instagram"></i>
                   <span class="sr-only">Instagram page</span>
               </a>
-              <a href="#" class="text-white hover:text-gray-900  ms-5">
+              <a href="https://x.com/penglipuranbali" class="text-white hover:text-gray-900  ms-5">
                 <i class="fa-brands fa-twitter"></i>
                   <span class="sr-only">X-twitter page</span>
               </a>
-              <a href="#" class="text-white hover:text-gray-900  ms-5">
+              <a href="https://www.youtube.com/channel/UCt_NrngnVUzWTKFkJ3ffD4A" class="text-white hover:text-gray-900  ms-5">
                 <i class="fa-brands fa-youtube"></i>
                   <span class="sr-only">Youtube page</span>
               </a>
-              <a href="#" class="text-white hover:text-gray-900  ms-5">
+              <a href="https://www.linkedin.com/in/desa-penglipuran-bali-9a1a92118/" class="text-white hover:text-gray-900  ms-5">
                   <i class="fa-brands fa-linkedin"></i>
                   <span class="sr-only">Linkedin page</span>
               </a>
-              <a href="#" class="text-white hover:text-gray-900  ms-5">
+              <a href="https://www.tumblr.com/desapenglipuran" class="text-white hover:text-gray-900  ms-5">
                  <i class="fa-brands fa-tumblr"></i>
                   <span class="sr-only">Tumblr page</span>
               </a>
